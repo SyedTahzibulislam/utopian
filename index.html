@@ -61,7 +61,7 @@
         }
 
 
-        #imagegallery img {
+        #gridview img {
 
             cursor: pointer;
 
@@ -83,6 +83,8 @@
             text-shadow: 2px 2px #a1a0a0;
             text-align: center;
             margin-bottom: 50px;
+
+            margin-top: 200px;
         }
 
         .nav-item {
@@ -116,10 +118,17 @@
             border-radius: 1px;
         }
 
+        #gridview {
+            margin-left: 150px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 26px;
+            column-gap: 79px;
+
+        }
 
 
-
-        @media (max-width: 575.98px) {
+        @media screen and (max-width: 576px) {
 
             #overview {
 
@@ -161,9 +170,37 @@
             }
 
 
+            #gridview {
+                margin-left: 110px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 26px;
+                column-gap: 79px;
+
+            }
+
+
+            .textshadow {
+                margin-left: 120px;
+            }
 
 
 
+        }
+
+
+
+
+        @media only screen and (min-width: 577px) and (max-width: 920px) {
+
+            #gridview {
+                margin-left: 100px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 26px;
+                column-gap: 79px;
+
+            }
 
 
 
@@ -296,39 +333,6 @@
 
 
 
-    <div id="imagegallery" class="container">
-        <h2 class="textshadow">Products</h2>
-        <div class="row g-5">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
-
-
-
-
-
-
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
-            </div>
 
 
 
@@ -336,18 +340,41 @@
 
 
 
+    <h2 class="textshadow">Products</h2>
 
+
+
+    <div id="gridview">
+
+        <div class="imagegrid">
+            <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
 
         </div>
-        <br>
 
 
+        <div class="imagegrid">
+            <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
+
+        </div>
 
 
+        <div class="imagegrid">
+            <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
 
+        </div>
+
+        <div class="imagegrid">
+            <img class="img-fluid img-gallery" src="Products.jpg" alt="" srcset="">
+
+        </div>
 
 
     </div>
+
+
+
+
+
 
 
 
